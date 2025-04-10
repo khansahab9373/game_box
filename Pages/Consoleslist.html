@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Game Box</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../Assets/Styles/Home.css" />
+  </head>
+  <body>
+    <!-- nevbar start -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/Pages/Home.html"
+          ><img src="../Assets/Images/my logo.png" alt=" Logo" width="50"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/Pages/Home.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="gamesDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Games
+              </a>
+              <div class="dropdown-menu" aria-labelledby="gamesDropdown">
+                <a class="dropdown-item" href="#games">Game Library</a>
+                <a class="dropdown-item" href="../Pages/Gamelist.html"
+                  >All Game</a
+                >
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="consolesDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Consoles
+              </a>
+              <div class="dropdown-menu" aria-labelledby="consolesDropdown">
+                <a class="dropdown-item" href="./Home.html#Consoles"
+                  >Consoles Library
+                </a>
+                <a class="dropdown-item" href="./Consoleslist.html#games"
+                  >All Console Game</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Mylibrary.html">My Library</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./support.html">Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Myaccount.html">My Account</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <!-- nevbar end -->
+
+    <!-- carousel start -->
+    <div id="gameCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#gameCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#gameCarousel" data-slide-to="1"></li>
+        <li data-target="#gameCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://wallpapers.com/images/featured/call-of-duty-warzone-4k-kzetz7h7t75073ye.jpg"
+            class="d-block w-100"
+            alt="Game 1"
+          />
+
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Call Of Duty Warzone</h5>
+            <p>Exciting action-packed adventure.</p>
+            <a href="./Codwar.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://theaureview.com/wp-content/uploads/2020/01/red-dead-redemption-2-pc-rockstar-launcher-aggiorna-risolvere-problemi-v3-409812-1280x720.jpg"
+            class="d-block w-100"
+            alt="Game 2"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Red Dead Redemption 2</h5>
+            <p>Immersive role-playing experience.</p>
+            <a href="./Reddeadr2.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images4.alphacoders.com/843/843785.jpg"
+            class="d-block w-100"
+            alt="Game 3"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>FIFA 18</h5>
+            <p>
+              FIFA 18 is a football simulation game by EA Sports, featuring
+              realistic gameplay, updated teams, and various modes including
+              Career and Ultimate Team.
+            </p>
+            <a href="./Fifa18.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#gameCarousel"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#gameCarousel"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- carousel end  -->
+
+    <!-- icon start  -->
+    <section class="nav-icons">
+      <a href="#games"
+        ><i class="ri-gamepad-fill"><p>Games</p></i></a
+      >
+      <a href="./Gamepass.html"
+        ><i class="ri-vip-crown-fill"> <p>Game Pass</p> </i></a
+      >
+      <a href="./Consoleslist.html"
+        ><i class="ri-speaker-fill"><p>Consoles</p></i></a
+      >
+      <a href="./Mylibrary.html"
+        ><i class="ri-book-shelf-fill"><p>My Library</p></i></a
+      >
+      <a href="./Login.html"
+        ><i class="ri-login-box-fill"><p>Sign in</p></i></a
+      >
+    </section>
+    <!-- icon end  -->
+
+    <!-- game list start  -->
+
+    <section id="games">
+      <h2>Consoles Games</h2>
+      <div class="game-list">
+        <div class="game">
+          <img
+            src="https://gaming-cdn.com/images/products/1651/orig/frostpunk-pc-game-steam-europe-cover.jpg?v=1649172162"
+            alt="Game 1"
+          />
+          <h3>Frost Punk</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹1,399.00</p>
+          <button><a href="./FrostPunk.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000063709/32b85837beea0eee31220a59e247219662de4011f7a8c18fce61cf99a4933eb7"
+            alt="Game 2"
+          />
+          <h3>Metroid Prime</h3>
+          <p>Genre: Adventure</p>
+          <p>Price: ₹2,499.00</p>
+          <button><a href="./Metroidprime.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://cdn.wccftech.com/wp-content/uploads/2018/09/Magic-the-Gathering-Arena-Art.jpg"
+            alt="Game 3"
+          />
+          <h3>Magic: The Gathering Arena</h3>
+          <p>Genre: RPG</p>
+          <p>Price: ₹1,499.00</p>
+          <button><a href="./Magictag.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://www.outoflives.net/wp-content/uploads/2022/01/Revisiting-Uncharted-2-Among-Thieves.jpg"
+            alt="Game 4"
+          />
+          <h3>Uncharted 2</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹3,499.00</p>
+          <button><a href="./Uncharted2.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://s1.mmommorpg.com/media/wide/45-454308_holiday-wallpaper-social-media-headers-now-available-eve.jpg"
+            alt="Game 1"
+          />
+          <h3>Eve Online</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹499.00</p>
+          <button><a href="./Eveonline.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://media.contentapi.ea.com/content/dam/ea/easports/fifa/features/2018/world-cup-announce-april-30/top-hero/f18wc-features-top-hero-bg-xs.jpg"
+            alt="Game 2"
+          />
+          <h3>FIFA 18</h3>
+          <p>Genre: Adventure</p>
+          <p>Price: ₹499.00</p>
+          <button><a href="./Fifa18.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://gaming-cdn.com/images/products/7047/orig/red-dead-redemption-pc-game-cover.jpg?v=1705660598"
+            alt="Game 3"
+          />
+          <h3>Red Dead Redemption</h3>
+          <p>Genre: RPG</p>
+          <p>Price: ₹2,399.00</p>
+          <button><a href="./Reddeadr1.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/228200/capsule_616x353.jpg?t=1711458818"
+            alt="Game 4"
+          />
+          <h3>Company Of Heroes</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹599.00</p>
+          <button><a href="./Companyofheroes.html">Buy Now</a></button>
+        </div>
+
+        <div class="game">
+          <img
+            src="https://cdn.akamai.steamstatic.com/apps/dota2/images/dota2_social.jpg"
+            alt="Game 2"
+          />
+          <h3>DOTA 2</h3>
+          <p>Genre: Adventure</p>
+          <p>Price: ₹699.00</p>
+          <button><a href="./Dota2.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjhbrWHMFBrmTvXosWNUf-FTn19_3r6CCwNw&s"
+            alt="Game 3"
+          />
+          <h3>Legend Of Zelda: Majora's Mask</h3>
+          <p>Genre: RPG</p>
+          <p>Price: ₹1,699.00</p>
+          <button><a href="./Legendoz.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://image.api.playstation.com/vulcan/img/rnd/202010/2614/NVmnBXze9ElHzU6SmykrJLIV.png"
+            alt="Game 4"
+          />
+          <h3>Bloodborne</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹699.00</p>
+          <button><a href="./Bloodborne.html">Buy Now</a></button>
+        </div>
+
+        <div class="game">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoUCEuJt3Y4ZDK2DmJJ-sErlv0rb3LPc2FmA&s"
+            alt="Game 1"
+          />
+          <h3>Tomb Raider</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹400.00</p>
+          <button><a href="./Tombr.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPWEOwwb_IOc0SJvWrrfO8ZvnjfMQwBeUWOg&s"
+            alt="Game 2"
+          />
+          <h3>Call Of Duty</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹300.00</p>
+          <button><a href="./Cod.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdCcijFeofVymcUIJeV7kqy2_ZhHPFPSfMJA&s"
+            alt="Game 3"
+          />
+          <h3>GTA 5</h3>
+          <p>Genre: RPG</p>
+          <p>Price: ₹1,499.00</p>
+          <button><a href="./Gta.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9oEoAvqzfcNeXQiCwcpuU2OvD5fLelVkkhw&s"
+            alt="Game 4"
+          />
+          <h3>Cyber Punk 2077</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹2,399.00</p>
+          <button><a href="./Cyberp.html">Buy Now</a></button>
+        </div>
+
+        <div class="game">
+          <img
+            src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/03/red-dead-redemption-2-character-on-a-horse.jpg"
+            alt="Game 5"
+          />
+          <h3>Red Dead Redemption 2</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹2,399.00</p>
+          <button><a href="./Reddeadr2.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf9ko1r_23iB7H1RF2tOg6INdp8uZ2jjI54g&s"
+            alt="Game 6"
+          />
+          <h3>The Witcher 3:Wild Hunt</h3>
+          <p>Genre: Adventure</p>
+          <p>Price: ₹1,499.00</p>
+          <button><a href="./Witcher.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZMWhGT6zq8XaLMfx8VBjSVHFWPWo-m870qg&s"
+            alt="Game 7"
+          />
+          <h3>Battle field 3</h3>
+          <p>Genre: RPG</p>
+          <p>Price: ₹1,499.00</p>
+          <button><a href="./Battlef.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://i.ytimg.com/vi/jpyVfd8TyoI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDCaowle_-05mNwalvX8a45CB-mEQ"
+            alt="Game 8"
+          />
+          <h3>God Of War</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹2,499.00</p>
+          <button><a href="./Gow.html">Buy Now</a></button>
+        </div>
+
+        <div class="game">
+          <img
+            src="https://img-eshop.cdn.nintendo.net/i/cdb89d91f73cecccdddc8b421a31af03473ffab2c790a4cd7a133d28538052f2.jpg"
+            alt="Game 9"
+          />
+          <h3>Apex Legends</h3>
+          <p>Genre: Action</p>
+          <p>Price: Free</p>
+          <button><a href="./Apex.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2lNj08zMIu7AxxB2I2g0aM7Bs9lN_y5zQn-rnpsNy0R1eFTzppLKOLl54pA-bAQAAUDA&usqp=CAU"
+            alt="Game 10"
+          />
+          <h3>God Of War: Ragnarok</h3>
+          <p>Genre: Adventure</p>
+          <p>Price: ₹2,449.00</p>
+          <button><a href="./Gowrag.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://viendidong.com/wp-content/uploads/2022/12/valorant-thumb-vdd-viendidong.jpg"
+            alt="Game 11"
+          />
+          <h3>Valorant</h3>
+          <p>Genre: RPG</p>
+          <p>Price: free</p>
+          <button><a href="./Valorant.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCRf_wtqVjT0y6vcd97r1C0X9FFicfc1uucw&s"
+            alt="Game 12"
+          />
+          <h3>playerunknown's battlegrounds</h3>
+          <p>Genre: Action</p>
+          <p>Price: Free</p>
+          <button><a href="./Pubg.html">Buy Now</a></button>
+        </div>
+
+        <div class="game">
+          <img
+            src="https://www.hollywoodreporter.com/wp-content/uploads/2014/03/the_last_of_us.jpg"
+            alt="Game 13"
+          />
+          <h3>The Last Of Us</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹2,749.00</p>
+          <button><a href="./Lastofus.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPWEOwwb_IOc0SJvWrrfO8ZvnjfMQwBeUWOg&s"
+            alt="Game 14"
+          />
+          <h3>Call Of Duty</h3>
+          <p>Genre: Fps</p>
+          <p>Price: ₹349.00</p>
+          <button><a href="./Cod.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/store/games/wz/overview/WZPLP_Hero.webp"
+            alt="Game 15"
+          />
+          <h3>Call Of Duty:Warzone</h3>
+          <p>Genre: RPG</p>
+          <p>Price: ₹399.00</p>
+          <button><a href="./Codwar.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://i.ytimg.com/vi/XiDnPPZq2Ig/mqdefault.jpg"
+            alt="Game 16"
+          />
+          <h3>The Last OF Us: Part 2</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹2,399.00</p>
+          <button><a href="./Lastofus2.html">Buy Now</a></button>
+        </div>
+
+        <div class="game">
+          <img
+            src="https://i.ytimg.com/vi/6GHQgcAtPTE/maxresdefault.jpg"
+            alt="Game 1"
+          />
+          <h3>Tom Clancy's Rainbow Six Siege</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹1,399.00</p>
+          <button><a href="./Tomclancyrainbow.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://www.rocketleague.com/images/keyart/rl_evergreen.jpg"
+            alt="Game 2"
+          />
+          <h3>Rocket League</h3>
+          <p>Genre: Adventure</p>
+          <p>Price: ₹1,099.00</p>
+          <button><a href="./Rocketleague.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://i0.wp.com/highschool.latimes.com/wp-content/uploads/2021/09/league-of-legends.jpeg?fit=1607%2C895&ssl=1"
+            alt="Game 3"
+          />
+          <h3>League Of Legends</h3>
+          <p>Genre: RPG</p>
+          <p>Price: ₹1,599.00</p>
+          <button><a href="./Leagueoflegends.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://cdn2.unrealengine.com/social-image-chapter4-s3-3840x2160-d35912cc25ad.jpg"
+            alt="Game 4"
+          />
+          <h3>Fortnite</h3>
+          <p>Genre: Action</p>
+          <p>Price: Free</p>
+          <button><a href="./Fortnite.html">Buy Now</a></button>
+        </div>
+
+        <div class="game">
+          <img
+            src="https://i.ytimg.com/vi/XhP3Xh4LMA8/maxresdefault.jpg"
+            alt="Game 5"
+          />
+          <h3>EA Sports FC 24</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹1,699.00</p>
+          <button><a href="./Easportsfc24.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGtW5cm4aCqY-eCFnFf5QuIIW12oyVUy24jQ&s"
+            alt="Game 6"
+          />
+          <h3>Cities: Skylines</h3>
+          <p>Genre: Adventure</p>
+          <p>Price: ₹699.00</p>
+          <button><a href="./Citiesskylines.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://images.logicalincrements.com/gallery/1920/822/destiny2-wallpaper-1.jpeg"
+            alt="Game 7"
+          />
+          <h3>Destiny 2</h3>
+          <p>Genre: RPG</p>
+          <p>Price: ₹499.00</p>
+          <button><a href="./Destiny2.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000003208/4643fb058642335c523910f3a7910575f56372f612f7c0c9a497aaae978d3e51"
+            alt="Game 8"
+          />
+          <h3>Hollow Knight</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹499.00</p>
+          <button><a href="./Hollowknight.html">Buy Now</a></button>
+        </div>
+
+        <div class="game">
+          <img
+            src="https://i.ytimg.com/vi/0gLODoXanog/maxresdefault.jpg"
+            alt="Game 9"
+          />
+          <h3>ARK: Survival Evolved</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹499.00</p>
+          <button><a href="./Ark.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCQrUdReVwFN0Nws1BTp58QVCjiRfamXmTGA&s"
+            alt="Game 10"
+          />
+          <h3>Marvel’s Spider-Man</h3>
+          <p>Genre: Adventure</p>
+          <p>Price: ₹2,499.00</p>
+          <button><a href="./Spiderman.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw3/meta/reveal/jpt-reveal-meta.jpg"
+            alt="Game 11"
+          />
+          <h3>Call of Duty: Modern Warfare 3</h3>
+          <p>Genre: RPG</p>
+          <p>Price: ₹1,499.00</p>
+          <button><a href="./Codmw3.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://www.minecraft.net/content/dam/games/minecraft/key-art/Vanilla-PMP_Collection-Carousel-0_Trails-and-Tales_1280x768.jpg"
+            alt="Game 12"
+          />
+          <h3>Minecraft</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹1,499.00</p>
+          <button><a href="./Minecraft.html">Buy Now</a></button>
+        </div>
+
+        <div class="game">
+          <img
+            src="https://cdn2.unrealengine.com/egs-farmingsimulator22premiumedition-giantssoftwaregmbh-editions-s1-2560x1440-b4157c45f3b0.jpg?h=270&quality=medium&resize=1&w=480"
+            alt="Game 13"
+          />
+          <h3>Farming Simulator 22</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹1,499.00</p>
+          <button><a href="./Farmingsimulator22.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://i.ytimg.com/vi/0YKjFoGxbec/maxresdefault.jpg"
+            alt="Game 14"
+          />
+          <h3>Among Us</h3>
+          <p>Genre: Adventure</p>
+          <p>Price: Free</p>
+          <button><a href="./Amongus.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/596970/capsule_616x353.jpg?t=1710762132"
+            alt="Game 15"
+          />
+          <h3>Sunless Skies: Sovereign Edition</h3>
+          <p>Genre: RPG</p>
+          <p>Price: ₹2,299.00</p>
+          <button><a href="./Sunlessskies.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://cdn1.epicgames.com/offer/2c42520d342a46d7a6e0cfa77b4715de/EGS_DyingLightStandardEdition_Techland_Editions_S1_2560x1440-2967a86bdce109ba6c772176187353d1"
+            alt="Game 16"
+          />
+          <h3>Dying Light: Standard Edition</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹1,299.00</p>
+          <button><a href="./Dyinglight.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://cdn1.epicgames.com/offer/2a09fb19b47f46dfb11ebd382f132a8f/EGS_MarvelsGuardiansoftheGalaxy_EidosMontral_S1_01_2560x1440-41457c6140198776b348b1c77e730e48"
+            alt="Game 1"
+          />
+          <h3>Marvel's Guardians of the Galaxy</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹2,299.00</p>
+          <button><a href="./Gotg.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://i.ytimg.com/vi/1_FIyNcQSgA/maxresdefault.jpg"
+            alt="Game 2"
+          />
+          <h3>Rise of the Tomb Raider</h3>
+          <p>Genre: Adventure</p>
+          <p>Price: ₹499.00</p>
+          <button><a href="./Tombr.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://cdn.wccftech.com/wp-content/uploads/2023/01/HITMAN-World-of-Assassination-Update-3.140-freelancer.jpg"
+            alt="Game 3"
+          />
+          <h3>HITMAN World of Assassination</h3>
+          <p>Genre: RPG</p>
+          <p>Price: ₹1,499.00</p>
+          <button><a href="./Hitman.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://store-images.s-microsoft.com/image/apps.56995.13869736752294987.ca050464-c72a-476d-941d-c1c814c4213d.086da48d-2bd1-47fd-85eb-cf98f6225882?q=90&w=480&h=270"
+            alt="Game 4"
+          />
+          <h3>Fallout: New Vegas</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹2,499.00</p>
+          <button><a href="./Falloutnewvegas.html">Buy Now</a></button>
+        </div>
+
+        <div class="game">
+          <img
+            src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/03/red-dead-redemption-2-character-on-a-horse.jpg"
+            alt="Game 5"
+          />
+          <h3>Red Dead Redemption 2</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹2,399.00</p>
+          <button><a href="./Reddeadr2.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://image.api.playstation.com/vulcan/ap/rnd/202202/2800/vChw2eKB1HszLbMcQRVMVMzP.jpg"
+            alt="Game 6"
+          />
+          <h3>Ghostwire: Tokyo</h3>
+          <p>Genre: Adventure</p>
+          <p>Price: ₹1,299.00</p>
+          <button><a href="./Ghostwiretokyo.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://gaming-cdn.com/images/products/2124/orig-fallback-v1/the-elder-scrolls-online-pc-mac-game-cover.jpg?v=1705596590"
+            alt="Game 7"
+          />
+          <h3>The Elder Scrolls Online</h3>
+          <p>Genre: RPG</p>
+          <p>Price: ₹2,499.00</p>
+          <button><a href="./Theelderscrollsonline.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://cdn1.epicgames.com/angelonia/offer/WD2-STD-Capsule-1920x1080-2a2ed8c8265ab31156be8ab48a93dc212d5c7095.jpg"
+            alt="Game 8"
+          />
+          <h3>Watch Dogs 2 Standard Edition</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹2,499.00</p>
+          <button><a href="./Watchdogs2.html">Buy Now</a></button>
+        </div>
+
+        <div class="game">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDKAwUC8fn5CYE9MjDETPjgczOS1kPk8WBhw&s"
+            alt="Game 9"
+          />
+          <h3>PAYDAY 2</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹1,499.00</p>
+          <button><a href="./Payday2.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://i0.wp.com/uploads.freegogpcgames.com/image/Mount-Blade-II-Bannerlord.jpg?fit=678%2C381&ssl=1"
+            alt="Game 10"
+          />
+          <h3>Mount & Blade II: Bannerlord</h3>
+          <p>Genre: Adventure</p>
+          <p>Price: ₹499.00</p>
+          <button><a href="./Mount&blade2.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://cdn.wccftech.com/wp-content/uploads/2024/03/Final-Fantasy-XIV-Dawntrail-HD-scaled.jpg"
+            alt="Game 11"
+          />
+          <h3>Final Fantasy XIV</h3>
+          <p>Genre: RPG</p>
+          <p>Price: ₹3,499.00</p>
+          <button><a href="./FinalfantasyXIV.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blackops6/meta/BO6_LP-meta_image.jpg"
+            alt="Game 12"
+          />
+          <h3>Call Of Duty Black Ops 6</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹2,199.00</p>
+          <button><a href="./Codbackops6.html">Buy Now</a></button>
+        </div>
+
+        <div class="game">
+          <img
+            src="https://cdn.wccftech.com/wp-content/uploads/2016/10/Final-Fantasy-XV-HDR.jpg"
+            alt="Game 13"
+          />
+          <h3>Final Fantasy XV</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹2,499.00</p>
+          <button><a href="./Finalfantasyxv.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://image.api.playstation.com/vulcan/ap/rnd/202401/2906/df8c296e89570961418f21078c1f2a347e1919c334f38ace.jpg"
+            alt="Game 14"
+          />
+          <h3>Resident Evil 4 Remake</h3>
+          <p>Genre: Adventure</p>
+          <p>Price: ₹1,499.00</p>
+          <button><a href="./Residentevil4.html">Buy Now</a></button>
+        </div>
+        <div class="game">
+          <img
+            src="https://cdn.akamai.steamstatic.com/steam/apps/379720/header.jpg"
+            alt="Game 15"
+          />
+          <h3>Doom (2016)</h3>
+          <p>Genre: RPG</p>
+          <p>Price: ₹1,499.00</p>
+          <button><a href="./Doom.html">Buy Now</a></button>
+        </div>
+
+        <div class="game">
+          <img
+            src="https://i.ytimg.com/vi/qLZenOn7WUo/maxresdefault.jpg"
+            alt="Game 15"
+          />
+          <h3>ELDER RING Shadow of the Erdtree</h3>
+          <p>Genre: RPG</p>
+          <p>Price: ₹2,499.00</p>
+          <button><a href="./Elderringshadow.html">Buy Now</a></button>
+        </div>
+
+        <div class="game">
+          <img
+            src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2567870/header.jpg?t=1719621610"
+            alt="Game 16"
+          />
+          <h3>Chained Together</h3>
+          <p>Genre: Action</p>
+          <p>Price: ₹1,499.00</p>
+          <button><a href="./Chainedtogether.html">Buy Now</a></button>
+        </div>
+      </div>
+    </section>
+    <!-- game list end  -->
+
+    <!-- video 1 start  -->
+
+    <section>
+      <div class="video-container">
+        <video autoplay loop muted>
+          <source
+            src="../Assets/Videos/Y2meta.app-Marvel's Spider-Man_ Miles Morales - Features Trailer I PC Games-(1080p60).mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay-text">
+          <h1>Marvel’s Spider-Man Remastered</h1>
+          <p>Power Your Dreams</p>
+          <a href="./Spiderman.html" class="btn btn-success">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <!-- video 1 end  -->
+
+    <!-- card 1 start  -->
+    <section class="card-container">
+      <div class="card-wrapper">
+        <div
+          class="card"
+          style="
+            background-image: url('https://mrwallpaper.com/images/hd/fortnite-battle-royale-save-the-world-4k-poster-vjstkvwig22fysjw.jpg');
+          "
+        >
+          <h1>Fortnite</h1>
+          <p>
+            Fortnite is a popular battle royale game where players fight to be
+            the last person standing on an ever-shrinking map, featuring
+            building mechanics, vibrant graphics, and frequent content updates.
+          </p>
+          <button><a href="./Fortnite.html">GET IT NOW</a></button>
+        </div>
+      </div>
+      <div class="card-wrapper">
+        <div
+          class="card"
+          style="background-image: url('../Assets/Images/bg.jpg')"
+        >
+          <h1>Discover your next favourite game</h1>
+          <p>Play hundreds of games for one low monthly price</p>
+          <button><a href="./Gamepass.html">JOIN NOW</a></button>
+        </div>
+      </div>
+      <div class="card-wrapper">
+        <div
+          class="card"
+          style="
+            background-image: url('https://i.pinimg.com/1200x/7d/5c/bd/7d5cbde62fc884c252725aad1d978a63.jpg');
+          "
+        >
+          <h1>Watch Dogs 2 Standard Edition</h1>
+          <p>
+            Watch Dogs 2 is an action-adventure game set in a fictionalized San
+            Francisco. Players control hacker Marcus Holloway, using hacking,
+            stealth, and combat in an open-world environment. The game features
+            a rich storyline, side missions, and cooperative multiplayer.
+          </p>
+          <button><a href="./Watchdogs2.html">GET IT NOW</a></button>
+        </div>
+      </div>
+      <div class="card-wrapper">
+        <div
+          class="card"
+          style="
+            background-image: url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/06/call-of-duty-black-ops-6-tag-page-cover-art.jpg');
+          "
+        >
+          <button><a href="./Codbackops6.html">GET IT NOW</a></button>
+        </div>
+      </div>
+    </section>
+    <!-- card 1 end  -->
+
+    <!-- footer start  -->
+    <footer class="footer">
+      <div class="container">
+        <div class="about">
+          <h2>About Game Box</h2>
+          <p>
+            Game Box is your ultimate destination for gaming news, reviews, and
+            discussions. Join our community to stay updated on the latest in
+            gaming.
+          </p>
+        </div>
+        <div class="links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="./Home.html">Home</a></li>
+            <li><a href="./Gamelist.html">Games</a></li>
+            <li><a href="./support.html">Reviews</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="./support.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="social">
+          <h2>Follow Us</h2>
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/share/Tq2TTq5dBtXGKGRq/?mibextid=qi2Omg"
+                target="_blank"
+                ><img
+                  src="https://img.icons8.com/ios-filled/50/ffffff/facebook--v1.png"
+                  alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="https://x.com/khansahabplays?s=09" target="_blank"
+                ><img
+                  src="https://img.icons8.com/ios-filled/50/ffffff/twitter--v1.png"
+                  alt="Twitter"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/khansahabplays?utm_source=qr&igsh=NDJqejNxMWxlbDFt"
+                target="_blank"
+                ><img
+                  src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"
+                  alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com" target="_blank"
+                ><img
+                  src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png"
+                  alt="YouTube"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">&copy; 2024 Game Box. All rights reserved.</div>
+    </footer>
+
+    <!-- footer end  -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

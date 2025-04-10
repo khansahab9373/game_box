@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>support</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../Assets/Styles/support.css" />
+  </head>
+  <body>
+   <!-- nevbar start -->
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="/Pages/Home.html"
+        ><img src="../Assets/Images/my logo.png" alt=" Logo" width="50"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/Pages/Home.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="gamesDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Games
+            </a>
+            <div class="dropdown-menu" aria-labelledby="gamesDropdown">
+              <a class="dropdown-item" href="./Home.html#games">Game Library</a>
+              <a class="dropdown-item" href="./Gamelist.html"
+                >All Game</a
+              >
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="consolesDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Consoles
+            </a>
+            <div class="dropdown-menu" aria-labelledby="consolesDropdown">
+              <a class="dropdown-item" href="./Consoleslist.html#Consoles">Consoles Library </a>
+              <a class="dropdown-item" href="./Consoleslist.html"
+                >All Console Game</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Mylibrary.html">My Library</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./support.html">Support</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Myaccount.html">My Account</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <!-- nevbar end -->
+
+    <div class="container1">
+      <div class="header2">
+        <img src="../Assets/Images/logo log in.png" alt="Game Box Logo" />
+      </div>
+      <h2>Enter Card Details</h2>
+      <p>Please fill in your card details to complete your purchase.</p>
+      <form action="/submit_card_details" method="post">
+        <label for="card_name">Name on Card:</label>
+        <input type="text" id="card_name" name="card_name" required />
+
+        <label for="card_number">Card Number:</label>
+        <input
+          type="text"
+          id="card_number"
+          name="card_number"
+          required
+          pattern="\d{16}"
+          maxlength="16"
+        />
+
+        <div class="card-details">
+          <div>
+            <label for="expiry_date">Expiry Date (MM/YY):</label>
+            <input
+              type="text"
+              id="expiry_date"
+              name="expiry_date"
+              required
+              pattern="\d{2}/\d{2}"
+              maxlength="5"
+            />
+          </div>
+          <div>
+            <label for="cvv">CVV:</label>
+            <input
+              type="text"
+              id="cvv"
+              name="cvv"
+              required
+              pattern="\d{3}"
+              maxlength="3"
+            />
+          </div>
+        </div>
+
+        <label for="billing_address">Billing Address:</label>
+        <input
+          type="text"
+          id="billing_address"
+          name="billing_address"
+          required
+        />
+
+        <label for="zip_code">Zip Code:</label>
+        <input
+          type="text"
+          id="zip_code"
+          name="zip_code"
+          required
+          pattern="\d{5}"
+          maxlength="5"
+        />
+
+        <button class="but" type="submit">Submit</button>
+      </form>
+    </div>
+   <!-- footer start  -->
+   <footer class="footer">
+    <div class="container">
+      <div class="about">
+        <h2>About Game Box</h2>
+        <p>
+          Game Box is your ultimate destination for gaming news, reviews, and
+          discussions. Join our community to stay updated on the latest in
+          gaming.
+        </p>
+      </div>
+      <div class="links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./Gamelist.html">Games</a></li>
+          <li><a href="./support.html">Reviews</a></li>
+          <li><a href="#community">Community</a></li>
+          <li><a href="./support.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="social">
+        <h2>Follow Us</h2>
+        <ul>
+          <li>
+            <a
+              href="https://www.facebook.com/share/Tq2TTq5dBtXGKGRq/?mibextid=qi2Omg"
+              target="_blank"
+              ><img
+                src="https://img.icons8.com/ios-filled/50/ffffff/facebook--v1.png"
+                alt="Facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://x.com/khansahabplays?s=09" target="_blank"
+              ><img
+                src="https://img.icons8.com/ios-filled/50/ffffff/twitter--v1.png"
+                alt="Twitter"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/khansahabplays?utm_source=qr&igsh=NDJqejNxMWxlbDFt"
+              target="_blank"
+              ><img
+                src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"
+                alt="Instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com" target="_blank"
+              ><img
+                src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png"
+                alt="YouTube"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">&copy; 2024 Game Box. All rights reserved.</div>
+  </footer>
+
+  <!-- footer end  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

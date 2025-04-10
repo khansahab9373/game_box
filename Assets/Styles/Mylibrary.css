@@ -1,0 +1,328 @@
+body {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-image: url("https://img.freepik.com/premium-photo/dark-photo-dark-room-with-black-white-picture-ladder_994023-40287.jpg?w=826");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(255 255 255);
+  /* border: 1px solid; */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: red;
+  /* background-color: rgba(255, 255, 255, 0.553); */
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  z-index: 99;
+
+  background-image: url(https://img.freepik.com/premium-photo/dark-photo-dark-room-with-black-white-picture-ladder_994023-40287.jpg?w=826);
+  box-shadow: 0px 5px 20px rgba(255, 0, 0, 0.605);
+  width: 100%;
+}
+
+nav {
+  backdrop-filter: blur(3px) saturate(400%);
+  -webkit-backdrop-filter: blur(2px) saturate(10%);
+}
+
+.navbar-brand img {
+  height: 30px;
+  width: auto;
+  padding-right: 20px;
+  padding-left: 10px;
+  transition: transform 0.3s;
+  transform: scale(1.3);
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.6);
+}
+
+.nav-link {
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+  color: #e2e2e2;
+  transform: scale(1.3);
+}
+
+.dropdown-menu a {
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.dropdown-menu a:hover {
+  background-color: #0b5d08;
+  transform: scale(1.05);
+}
+
+.form-control {
+  transition: transform 0.3s;
+}
+
+.form-control:focus {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.btn {
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: #e2e2e2;
+  color: #107c10;
+  transform: scale(1.1);
+}
+
+/* end  */
+
+.container1 {
+  padding: 20px;
+  margin-top: 10vh;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 10px;
+}
+
+.section1 {
+  margin-bottom: 30px;
+}
+
+.section1-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.play-later-placeholder {
+  background-color: #33333375;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #bbb;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #2a2a2a84;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.filters label {
+  margin-right: 20px;
+}
+
+.filters input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.filters button {
+  margin-left: auto;
+  background-color: #00b0298f;
+  color: #fff;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.filters button:hover {
+  background-color: #ab0c0c92;
+}
+
+.filters select {
+  margin-left: 10px;
+  background-color: #00b0298f;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.filters select:hover {
+  background-color: #ab0c0c92;
+}
+
+.game-list1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.game-item1 {
+  display: flex;
+  align-items: center;
+  background-color: #2a2a2a71;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.game-item1 img {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+.game-title1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.game-subtitle {
+  font-size: 16px;
+  color: #bbb;
+}
+
+.footer {
+  background-color: #222222c2;
+  padding: 40px 0 0 0;
+  text-align: center;
+}
+
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer .about,
+.footer .links,
+.footer .social {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer .links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .links ul li {
+  margin-bottom: 10px;
+}
+
+.footer .links ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer .links ul li a:hover {
+  color: #f20606ed;
+}
+
+.footer .social ul {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+}
+
+.footer .social ul li {
+  margin: 0 10px;
+}
+
+.footer .social ul li a {
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.footer .social ul li a img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer .copyright {
+  margin-top: 20px;
+
+  background-color: #0a0;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: red;
+    background-color: rgba(255, 255, 255, 0.553);
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgb(255 255 255);
+    border: 1px solid;
+  }
+
+  .filters {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 20px;
+    background-color: #2a2a2a84;
+    padding: 10px;
+    border-radius: 5px;
+    flex-direction: column;
+  }
+
+  .filters button {
+    margin-left: 0px;
+    background-color: #00b0298f;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+
+  .navbar-nav .nav-link {
+    padding-right: 0px;
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  .dropdown-item {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: red;
+    background-color: rgba(255, 255, 255, 0.553);
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgb(255 255 255);
+    border: 1px solid;
+  }
+
+  .navbar-nav .nav-link {
+    padding-right: 0px;
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  .dropdown-item {
+    text-align: center;
+  }
+}

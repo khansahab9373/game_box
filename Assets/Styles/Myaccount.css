@@ -1,0 +1,344 @@
+body {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+
+  /* background-color: #111; */
+  background-image: url("https://img.freepik.com/premium-photo/dark-photo-dark-room-with-black-white-picture-ladder_994023-40287.jpg?w=826");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #222222ad;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  display: block;
+  position: fixed;
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.profile-pic img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.profile-name h2 {
+  margin: 10px 0 0;
+  font-size: 1.5em;
+}
+
+.profile-name p {
+  margin: 5px 0 0;
+  color: #aaaaaa;
+}
+
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.side-nav ul li {
+  margin: 10px 0;
+}
+
+.side-nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.recent-games {
+  margin-top: 20px;
+  color: #aaaaaa;
+}
+
+.game-placeholder {
+  background-color: #ec18186c;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.main-content {
+  width: 80%;
+  padding: 20px;
+  margin-left: 350px;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-settings button {
+  background-color: rgba(0, 170, 0, 0.329);
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-settings button:hover {
+  background-color: #ec18186c;
+}
+
+.profile-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.profile-details h3 {
+  margin-bottom: 10px;
+}
+
+.achievements {
+  margin: 20px 0;
+}
+
+.achievements h3 {
+  margin-bottom: 10px;
+}
+
+.achievements p {
+  margin-bottom: 20px;
+}
+
+.games {
+  display: flex;
+  justify-content: space-between;
+}
+
+.game {
+  background-color: #222222c2;
+  padding: 40px;
+  border-radius: 10px;
+  width: 48%;
+}
+
+.game img {
+  width: 100%;
+  height: 100vh;
+  border-radius: 20px;
+}
+
+.progress {
+  background-color: #222222c2;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #00ff00;
+}
+
+.recently-played {
+  margin: 20px 0;
+}
+
+.recently-played h3 {
+  margin-bottom: 10px;
+}
+
+.recent-games img {
+  width: 48%;
+  border-radius: 10px;
+  margin-right: 4%;
+}
+
+@media screen and (max-width: 600px) {
+  .game {
+    background-color: #222222c2;
+    padding: 0px;
+    border-radius: 10px;
+    width: 48%;
+  }
+
+  .sidebar {
+    width: 30%;
+    background-color: #222222ad;
+    padding: 8px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .profile-name h2 {
+    margin: 10px 0 0;
+    font-size: 13px;
+  }
+
+  .side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0px 0;
+    font-size: 10px;
+  }
+
+  .game-placeholder {
+    background-color: #ec18186c;
+    padding: 2px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+
+  .profile-pic img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 10px;
+    margin-left: 128px;
+  }
+
+  p {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .main-content
+    .profile-header
+    .profile-details
+    .achievements
+    .recently-played {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .game img {
+    width: 100%;
+    height: 22vh;
+    border-radius: 20px;
+  }
+
+  .achievements p {
+    margin-bottom: 0px;
+  }
+
+  .navbar-nav .nav-link {
+    padding-right: 0px;
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  .dropdown-item {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .game {
+    background-color: #222222c2;
+    padding: 0px;
+    border-radius: 10px;
+    width: 48%;
+  }
+
+  .sidebar {
+    width: 20%;
+    background-color: #222222ad;
+    padding: 8px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .profile-name h2 {
+    margin: 10px 0 0;
+    font-size: 25px;
+  }
+
+  .side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0px 0;
+    font-size: 17px;
+  }
+
+  .profile-settings button {
+    background-color: rgba(0, 170, 0, 0.329);
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .game-placeholder {
+    background-color: #ec18186c;
+    padding: 2px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+
+  .profile-pic img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 10px;
+    margin-left: 185px;
+  }
+
+  p {
+    font-size: 17px;
+    padding: 5px;
+  }
+
+  .main-content
+    .profile-header
+    .profile-details
+    .achievements
+    .recently-played {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .game img {
+    width: 100%;
+    height: 46vh;
+    border-radius: 20px;
+  }
+
+  .achievements p {
+    margin-bottom: 0px;
+  }
+
+  .navbar-nav .nav-link {
+    padding-right: 0px;
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  .dropdown-item {
+    text-align: center;
+  }
+}
